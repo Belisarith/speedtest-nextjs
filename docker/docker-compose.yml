@@ -5,4 +5,4 @@ services:
     build: .
     restart: unless-stopped
     ports:
-      - 19000:3000
+      - 19080:3000

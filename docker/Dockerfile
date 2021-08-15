@@ -6,4 +6,10 @@ RUN pip3 install speedtest-cli
 
 RUN  cd /home/ && git clone https://github.com/Belisarith/speedtest-nextjs.git
 
-RUN cd /home/speedtest-nextjs/ && npm install && npm run build && npm run start
+EXPOSE 3000
+
+RUN cd /home/speedtest-nextjs/ && npm install && npm run build
+
+WORKDIR /home/speedtest-nextjs/
+
+CMD ["npm", "start"]
