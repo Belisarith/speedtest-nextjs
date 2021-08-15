@@ -2,10 +2,6 @@
 
 Small and really simple app for a speedtest at your home, which you can trigger from remote.
 
-## Dependencies on local system
-
-1. speedtest-cli
-
 ## Docker
 
 1. Copy the files from the docker container to your machine, where you want to run the container.
